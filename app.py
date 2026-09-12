@@ -95,7 +95,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🎓 AKSU AI Assistant")
+st.title("🎓 AKS University AI Assistant")
 st.markdown("<p style='text-align: center; color: #e2e8f0; font-weight: 500;'>Satna, Madhya Pradesh | Official AI Helpdesk</p>", unsafe_allow_html=True)
 
 # Helper Function: Browser Headers ke saath Web Page Fetch karna

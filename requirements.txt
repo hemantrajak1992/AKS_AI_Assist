@@ -1,0 +1,10 @@
+streamlit
+groq
+langchain
+langchain-community
+langchain-text-splitters
+chromadb
+sentence-transformers
+huggingface-hub
+beautifulsoup4
+requests

@@ -24,8 +24,26 @@ st.set_page_config(
 )
 
 # --- CUSTOM CSS ---
+# --- CUSTOM CSS (Hide Streamlit Top Header & Menu) ---
 st.markdown("""
 <style>
+    /* 1. Top Header Bar aur Right Menu Ko Hide Karna */
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+        height: 0%;
+    }
+    
+    /* 2. Top-Right 3-Dots Menu Ko Completely Remove Karna */
+    #MainMenu {
+        visibility: hidden;
+    }
+    
+    /* 3. Bottom Footer ("Made with Streamlit") Ko Hide Karna */
+    footer {
+        visibility: hidden;
+    }
+
+    /* 4. Background & Main UI Styling */
     .stApp {
         background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.88)), 
                     url('https://www.aksuniversity.ac.in/sites/default/files/2024-04/aks_a_block.jpeg') no-repeat center center fixed;
@@ -34,7 +52,7 @@ st.markdown("""
 
     .block-container {
         max-width: 800px;
-        padding-top: 2rem;
+        padding-top: 1rem;
         padding-bottom: 3rem;
     }
 
